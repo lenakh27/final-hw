@@ -1,0 +1,42 @@
+$primary-font: 'Montserrat', sans-serif;
+
+.team {
+    display: flex;
+    background: #F5F5FA;
+    border-radius: 12px;
+
+    &_img {
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+
+    &_wrapper {
+        margin: 30px;
+    }
+
+    &_text {
+        margin-top: 30px;
+        margin-bottom: 6px;
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #B3B3BA;
+
+        &__desc {
+            font-family: $primary-font;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.57;
+            color: #B3B3BA;
+        }
+    }
+
+    &_slider {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+}

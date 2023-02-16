@@ -1,0 +1,63 @@
+$primary-font: 'Montserrat', sans-serif;
+
+.publications {
+    background-color: #F5F5FA;
+
+    &_wrapper {  
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        gap: 30px;
+        border-bottom: 2px solid #E6E6F0;
+    }
+
+    &_card {
+        max-width: 420px;
+        width: 100%;
+        background-color: #FFFF;
+        border-radius: 8px;
+
+        &__img {
+            max-width: 420px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        &__wrapper {
+            padding: 0 30px 30px 30px;
+            max-width: 360px;
+            width: 100%;
+        }
+    }
+
+    &_title {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #24A3FF;
+
+        &__desc {
+            font-family: $primary-font;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #B3B3BA;
+        }
+
+        &__text {
+            margin-top: 15px;
+            padding-top: 15px;
+            font-family: $primary-font;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.57;
+            color: #000000;
+            border-top: 4px solid #E6E6F0;
+        }
+    }
+}

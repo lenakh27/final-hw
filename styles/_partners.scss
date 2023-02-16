@@ -1,0 +1,21 @@
+$primary-font: 'Montserrat', sans-serif;
+
+.partners {
+    &_title {
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #323264;
+    }
+    
+    &_cards {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 360px);
+    }
+    
+}

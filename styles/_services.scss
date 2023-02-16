@@ -1,0 +1,77 @@
+$primary-font: 'Montserrat', sans-serif;
+$primary-color: #24A3FF;
+
+.main-link {
+    position: relative;
+    margin-bottom: 10px;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $primary-color;
+    cursor: pointer;
+    text-decoration: none;
+
+    &::after {
+        position: absolute;
+        content: '';
+        margin-left: 5px;
+        top: 25%;
+        width: 6px;
+        height: 6px;
+        border-bottom: 2px solid $primary-color;
+        border-right: 2px solid $primary-color;
+        transform: rotate(-45deg);
+    }
+    &:hover {
+        color: #F0145A;
+    }
+}
+
+.main-title {
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.21;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.services {
+
+    &_wrapper {
+        display: grid;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 60px;
+    }
+
+    &_card {
+        max-width: 400px;
+        width: 100%;
+
+        &__title {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: $primary-font;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 1.22;
+            color: $primary-color;
+        }
+
+        &__text {
+            font-family: $primary-font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.62;
+            color: #FFFFFF;
+        }
+    }
+
+}
