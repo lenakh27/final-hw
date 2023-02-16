@@ -40,6 +40,7 @@
 }
 
 .header-hero {
+  padding-top: 50px;
   position: relative;
 }
 .header-hero__symbol {
@@ -403,10 +404,10 @@
 }
 
 .publications {
+  padding-top: 30px;
   background-color: #F5F5FA;
 }
 .publications_wrapper {
-  padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
   gap: 30px;

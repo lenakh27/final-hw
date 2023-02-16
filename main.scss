@@ -1,8 +1,8 @@
 @use './styles/base';
 @use './styles/header';
-@use './styles/hero';
-@use './styles/services';
-@use './styles/team';
-@use './styles/partners';
-@use './styles/publications';
+@use './styles/pages/homepage/hero';
+@use './styles/pages/homepage/services';
+@use './styles/pages/homepage/team';
+@use './styles/pages/homepage/partners';
+@use './styles/pages/homepage/publications';
 @use './styles/footer';
