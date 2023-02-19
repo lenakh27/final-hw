@@ -1,6 +1,8 @@
 $primary-font: 'Montserrat', sans-serif;
 
 .publications {
+    display: flex;
+    justify-content: center;
     padding-top: 30px;
     background-color: #F5F5FA;
 
@@ -12,6 +14,7 @@ $primary-font: 'Montserrat', sans-serif;
     }
 
     &_card {
+        margin-top: 30px;
         max-width: 420px;
         width: 100%;
         background-color: #FFFF;

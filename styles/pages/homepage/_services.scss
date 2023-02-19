@@ -3,11 +3,10 @@ $primary-color: #24A3FF;
 
 .main-link {
     position: relative;
-    margin-bottom: 10px;
     font-family: $primary-font;
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $primary-color;
@@ -17,6 +16,7 @@ $primary-color: #24A3FF;
     &::after {
         position: absolute;
         content: '';
+        display: inline-block;
         margin-left: 5px;
         top: 25%;
         width: 6px;
@@ -24,6 +24,11 @@ $primary-color: #24A3FF;
         border-bottom: 2px solid $primary-color;
         border-right: 2px solid $primary-color;
         transform: rotate(-45deg);
+       
+    }
+    &:hover::after {
+        border-bottom: 2px solid #F0145A;
+        border-right: 2px solid #F0145A;
     }
     &:hover {
         color: #F0145A;
@@ -31,6 +36,7 @@ $primary-color: #24A3FF;
 }
 
 .main-title {
+    margin-top: 10px;
     font-family: $primary-font;
     font-weight: 700;
     font-size: 38px;
@@ -73,5 +79,4 @@ $primary-color: #24A3FF;
             color: #FFFFFF;
         }
     }
-
 }

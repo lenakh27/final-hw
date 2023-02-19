@@ -1,0 +1,323 @@
+@media (min-width: 1700px) {
+    .container {
+        max-width: 1600px;
+    }
+    .team {
+        &_title {
+            max-width: 1360px;
+        }
+
+        &_members {
+            &__img {
+                max-width: 494px;
+                width: 100%;
+            }
+        }
+    }
+    .entry {
+        max-width: 1360px;
+    }
+    .entry_descr__text {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .team {
+
+        &_members {
+            &__img {
+                max-width: 350pxpx;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1080px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .container {
+        max-width: 904px;
+    }
+    .team {
+        &_title {
+            max-width: 664px;
+        }
+
+        &_members {
+            &__img {
+                max-width: 262px;
+                width: 100%;
+            }
+            
+        }
+    }
+
+    .entry {
+        max-width: 904px;
+
+        &_link::before {
+            display: none;
+        }
+    }
+    .entry_descr__text {
+        max-width: 544px;
+    }
+}
+
+@media (max-width: 950px) {
+    .container {
+        max-width: 648px;
+    }
+
+    .header {
+        &_logo {
+            display: none;
+
+            &__wrapper {
+                display: flex;
+            }
+
+            &__link {
+               display: inline-block;
+            }
+
+            &__tablet {
+                display: inline-block;
+                margin: 30px 0;
+            }
+        }
+
+        &_menu {
+            &__nav {
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    .team {
+       &_members {
+            grid-template-columns: repeat(2, 294px);
+            &__img {
+                max-width: 294px;
+                height: 400px;
+            }
+        }
+    }
+
+    .entry {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 648px;
+    }
+    .entry_descr__text {
+        max-width: 648px;
+    }
+
+    .footer {
+        position: relative;
+        flex-direction: column;
+           
+        &_contacts__list li {
+            display: inline;
+        }
+
+        &_link {
+            display: inline;
+        }
+
+        &_copyright {
+            position: absolute;
+            align-self: flex-end;
+            display: inline-block;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+
+    .mobile_container {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .mobile_container .header_menu__wrapper {
+        display: flex;
+        padding: 15px 12px;
+        background: #F5F5FA;
+        justify-content: space-between;
+    }
+    
+    .container {
+        max-width: 345px;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        background-color: #323264;
+    }
+
+    .menu__box {
+        background: #FFFFFF;
+    }
+
+    .header {
+        display: block;
+        padding-top: 0;
+
+        &_logo {
+            display: none;
+
+            &__img {
+                max-width: 70px;
+                width: 100%;
+            }
+
+            &__slash {
+                width: 12px;
+                height: 26px;
+            }
+
+            &__link {
+                font-size: 20px;
+                line-height: 1.2;
+            }
+
+            &__tablet {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 15px;
+                margin-bottom: 0;
+                padding: 0;
+
+                &__menu {
+                    display: inline-block;
+                }
+            }
+        }
+
+        &-mobile_menu {
+            display: block;
+        }
+
+        &_menu {
+            &__wrapper {
+                display: none;
+            }
+
+            &__link {
+                display: none;
+                    &::before {
+                    display: none;
+                    }
+            }
+
+            &__mobile {
+                display: inline-block;
+            }
+    
+            &__bold {
+                display: block;
+                margin-right: 15px;
+            }
+
+            &__nav {
+                display: none;
+            }
+        }
+    }
+
+    .team {
+        padding: 0 15px;
+
+        &_title {
+            max-width: 315px;
+            font-size: 30px;
+            line-height: 1.23;
+        }
+
+        &_members {
+            grid-template-columns: 315px;
+
+            &__img {
+                max-width: 315px;
+                height: 300px;
+            }
+        }
+    }
+
+    .entry {
+        max-width: 315px;
+    }
+    .entry_descr__text {
+        max-width: 315px;
+    }
+
+    .footer {
+        position: static;
+        justify-content: center;
+        align-items: center;
+
+        &_contacts {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+
+            &__list {
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &_link {
+            margin-bottom: 10px;
+            display: block;
+            margin-right: 0;
+           
+            &__bold {
+                display: block;
+                margin-bottom: 10px;
+                margin-right: 0;
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+            &__mail {
+                display: block;
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+        }
+        &_ref::before {
+            display: none;
+        }
+
+        &_copyright {
+            position: static;
+            align-self: center;
+            display: block;
+        }
+    }
+}

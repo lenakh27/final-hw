@@ -1,44 +1,18 @@
-
-$primary-color: #323264;
-$secondary-color: #B3B3BA;
 $primary-font: 'Montserrat', sans-serif;
+$primary-color: #FFFFFF;
 
 .header {
-    padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    &_logo {
-        display: flex;
-
-        &__tablet {
+    &_logo__tablet {
+        display: none;
+        &__menu {
             display: none;
-            &__menu {
-            display: none;
-            }
-        }
-
-        &__img {
-            display: block;
-            position: relative;
-        }
-
-        &__slash {
-            display: inline-block;
-            margin-left: 4px;
-            margin-right: 4px;
-        }
-
-        &__link {
-            text-decoration: none;
-            font-family: $primary-font;
-            font-weight: 400;
-            font-size: 36px;
-            line-height: 1.22;
-            color: $primary-color;
         }
     }
+
 
     &_menu {
         display: flex;
@@ -62,22 +36,20 @@ $primary-font: 'Montserrat', sans-serif;
             line-height: 1.25;
             text-align: center;
             letter-spacing: 1px;
-            color: $secondary-color;
+            color: $primary-color;
             cursor: pointer;
 
             &:hover {
-                background: #F5F5FA;
+                background: rgba(255, 255, 255, 0.2);
                 border-radius: 8px;
             }
 
             &:focus {
-                color: #FFFFFF;
                 background: #F0145A;
                 border-radius: 8px;
             }
 
             &:last-child {
-                color: #FFFFFF;
                 background: #F0145A;
                 border-radius: 8px;
             }
@@ -95,7 +67,7 @@ $primary-font: 'Montserrat', sans-serif;
             font-family: $primary-font;
             font-size: 16px;
             line-height: 1.25;
-            color: $secondary-color;
+            color: $primary-color;
             text-decoration: none;
 
             &::before {
@@ -120,7 +92,7 @@ $primary-font: 'Montserrat', sans-serif;
         &__svg {
             display: inline-block;
             margin-top: -5px;
-            fill: $secondary-color;
+            fill: $primary-color;
 
             &:hover {
                 fill: #F0145A;
@@ -135,7 +107,7 @@ $primary-font: 'Montserrat', sans-serif;
             text-decoration: none;
             position: relative;
             text-align: right;
-            color: #24A3FF;
+            color: $primary-color;
 
             &::after {
                 position: absolute;
@@ -145,7 +117,7 @@ $primary-font: 'Montserrat', sans-serif;
                 content: "";
                 width: 100%;
                 height: 2px;
-                background-color: #24A3FF;
+                background-color: $primary-color;
                 opacity: 0;
                 transition: all 0.2s ease-in;
             }
@@ -163,28 +135,6 @@ $primary-font: 'Montserrat', sans-serif;
                 }
             }
         }
-
-        &__current {
-            font-family: $primary-font;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1.25;
-            text-decoration: none;
-            text-align: right;
-            position: relative;
-            color: #F0145A;
-            &::after {
-                position: absolute;
-                left: 0;
-                bottom: -3px;
-                display: block;
-                content: '';
-                width: 100%;
-                height: 2px;
-                background-color: #F0145A;
-                z-index: 1;
-            }
-        } 
 
         &__nav {
             display: flex;

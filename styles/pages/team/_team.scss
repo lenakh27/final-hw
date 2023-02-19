@@ -1,0 +1,110 @@
+$primary-font: 'Montserrat', sans-serif;
+$primary-color: #323264;
+$secondary-color: #B3B3BA;
+
+.mobile_container {
+    display: none;
+}
+
+.team {
+    &_title {
+        display: block;
+        margin: 0 auto;
+        padding: 60px 0;
+        max-width: 1080px;
+        width: 100%;
+        text-align: left;
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 1.21;    
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &_members {
+        padding-bottom: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 60px;
+
+        &__title {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            display: inline-block;
+            font-family: $primary-font;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.25;
+            color: $primary-color;
+
+            &:hover {
+                color: #F0145A;
+            }
+        }
+
+        &__link {
+            margin-top: 15px;
+            display: inline-block;
+            float: right;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        &__btn {
+            display: inline-block;
+            position: relative;
+            width: 32px;
+            height: 32px;
+            background-color: #F5F5FA;
+            border: #F5F5FA;
+            border-radius: 50%;
+            cursor: pointer;
+    
+            &::after {
+                content: '';
+                position: absolute;
+                top: 23%;
+                left: 15%;
+                width: 13px;
+                height: 13px;
+                border-right: 2px solid #24A3FF;
+                border-top: 2px solid #24A3FF;
+                transform: rotate(45deg) scale(.8);
+                animation: animate 1s ease-in-out infinite;
+    
+                @keyframes animate {
+                    0%
+                    {
+                        transform: translateX(0) rotate(45deg) scale(.8);
+                    }
+                    100% {
+                        transform: translateX(3px) rotate(45deg) scale(.9);
+                    }
+                }
+            }
+            &:hover::after {
+                background-color: #EDEDF7;
+                border: #EDEDF7;
+                border-right: 2px solid #F0145A;
+                border-top: 2px solid #F0145A;
+            }
+    
+            &:hover {
+                background-color: #EDEDF7;
+                border: #EDEDF7;
+            }
+        }
+
+        &__descr {
+            display: block;
+            font-family: $primary-font;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.57;
+            color: $secondary-color;
+        }
+    }
+}

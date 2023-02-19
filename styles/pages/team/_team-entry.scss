@@ -1,0 +1,103 @@
+$primary-font: 'Montserrat', sans-serif;
+
+.entry {
+    display: flex;
+    gap: 60px;
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+
+    &_img {
+        display: inline-block;
+        max-width: 400px;
+        width: 100%;
+        height: 500px;
+        background-image: url(../../../images/team/p5.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        background-size: cover;
+    }
+
+    &_descr {
+
+        &__wrapper {
+            display: block;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #E6E6F0;
+        }
+
+        &__title {
+            font-family: $primary-font;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.21;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #323264;
+        }
+
+        &__text {
+            display: block;
+            margin: 30px 0;
+            max-width: 620px;
+            width: 100%;
+            font-family: $primary-font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.62;
+            color: #000000;
+        }
+    }
+
+    &_title {
+        display: block;
+        margin-bottom: 15px;
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 1.21;    
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &_text {
+        display: inline-block;
+        margin-right: 26px;
+        font-family: $primary-font;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.57;
+        color: #B3B3BA;
+    }
+
+    &_link {
+        display: inline-block;
+        position: relative;
+        margin-right: 15px;
+        font-family: $primary-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #24A3FF;
+        text-decoration: none;
+        cursor: pointer;
+
+        &::before {
+            content: ''; 
+            position: absolute;
+            display: inline-block;
+            top: 35%;
+            left: -13px;
+            vertical-align: middle;
+            width: 6px;
+            height: 6px;
+            background-color: #E6E6F0;
+            border-radius: 50%;
+        }
+    }
+
+}

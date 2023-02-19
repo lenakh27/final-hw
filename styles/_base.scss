@@ -20,21 +20,17 @@
         &__back {
             position: relative;
                 display: block;
-                max-width: 1400px;
-                width: 100%;
+                width: 97%;
                 height: 10px;
                 background: #CACADB;
                 border-radius: 0px 0px 12px 12px;
                 
-                
-    
             &::after {
                 content: '';
                 position: absolute;
                 display: block;
                 margin-left: 20px;
-                max-width: 1360px;
-                width: 100%;
+                width: 97%;
                 height: 20px;
                 background: #E7E7F2;
                 border-radius: 0px 0px 12px 12px;
@@ -43,8 +39,10 @@
     
         }
     }
+}
 
-    
+.header-mobile_menu {
+    display: none;
 }
 
 .header-hero {
@@ -55,7 +53,6 @@
         position: absolute;
         display: flex;
         justify-content: center;
-        width: 697px;
         width: 100%;
     }
 }
