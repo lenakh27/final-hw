@@ -373,16 +373,22 @@
   background: #F5F5FA;
   border-radius: 12px;
 }
+
 .team_backgr {
   display: inline-block;
   max-width: 400px;
   width: 100%;
-  background-image: url(../../../images/homepage/Team-1.jpg);
-  background-repeat: no-repeat;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
-  background-size: cover;
 }
+
+.team_backgr img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .team_wrapper {
   margin: 30px;
 }
